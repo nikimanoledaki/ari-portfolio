@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Portfolio</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ari Salazar</title>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+  <a href="film"><h1>ARI SALAZAR</h1></a>
+
+  <a href="film">film</a>
+  <a href="documentary">documentary</a>
+  <a href="fashion">fashion</a>
+  <a href="photography">photography</a>
+  <a href="about">about</a>
+  <a href="contact">contact</a>
+  
+  <%= yield %>
   </body>
 </html>
