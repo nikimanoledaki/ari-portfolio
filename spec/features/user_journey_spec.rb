@@ -5,6 +5,5 @@ RSpec.feature 'Landing Page', type: :feature do
         visit '/'
         click_link 'Enter'
         expect(page).to have_content ('Ari')
-
     end
 end
