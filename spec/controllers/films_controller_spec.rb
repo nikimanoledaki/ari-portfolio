@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe FilmsController, type: :controller do
+RSpec.describe FilmController, type: :controller do
 
 end
