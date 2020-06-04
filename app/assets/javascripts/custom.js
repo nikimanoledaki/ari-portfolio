@@ -1,19 +1,24 @@
-window.onload = function () {
-
+document.addEventListener("turbolinks:load", function () {
     function navSlide() {
         var burger = document.querySelector(".burger");
-        var nav = document.querySelector('.menu');
-        var navLinks = document.querySelectorAll('.menu li');
+        var nav = document.querySelector(".menu");
+        var menuLinks = document.querySelectorAll(".menu li");
 
         burger.addEventListener('click', () => {
             nav.classList.toggle('nav-active');
+
+            menuLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = ''
+                } else {
+                    link.style.animation = `menuLinkFade 0.5s ease forwards ${index / 10 + 0.1}s`;
+                }
+            });
+
+            burger.classList.toggle('toggle');
         });
 
-        navLinks.forEach((link, index) => {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`;
-        });
     }
 
     navSlide();
-
-}
+});
