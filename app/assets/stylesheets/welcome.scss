@@ -4,4 +4,17 @@
 
 body {
     background-color: #bd5138;
+    font-family: 'DM Sans', sans-serif;
+}
+
+a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #70d958;
 }
