@@ -88,14 +88,17 @@ ul#menu li {
         margin-top: 0.6em;
         margin-right: 1.3em;
     }
-    
-    label:checked,
+
     label:active,
-    #toggle:checked,
-    #toggle:active {
-        background-color: none;
+    label:focus,
+    label:focus:active,
+    #toggle:focus,
+    #toggle:active,
+    #toggle:focus:active {
+        background-image: none;
         -webkit-box-shadow: none;
         box-shadow: none;
+        outline: 0;
     }
     
     ul#menu {
