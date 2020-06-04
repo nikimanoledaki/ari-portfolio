@@ -30,23 +30,29 @@ a:hover {
 }
 
 #title {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-top: 18px;
+    font-size: 150%;
     font-family: 'DM Sans', sans-serif;
     color: black;
     float: left;
-    padding: 0;
-    margin: 0;
 }
 
 ul#menu {
     margin:0;
     padding:0;
-    list-style-type:none;
+    list-style-type: none;
     text-align: right;
 }
 
 ul#menu li {
+    font-size: 90%;
     display: inline-block;
     margin-right: 5px;
+    margin-top: 10px;
     padding-right: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 0;
 }
