@@ -75,28 +75,42 @@ ul#menu li {
 }
 
 @media only screen and (max-width: 750px) { 
+    #title {
+        margin-left: 1.3em;
+    }
+
     label {
         color: #34292b;
         display: block;
         cursor: pointer;
         width: 26px;
         float: right;
-        margin-top: 0.8em;
+        margin-top: 0.6em;
         margin-right: 1.3em;
+    }
+
+    #toggle:active {
+        background-color: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
     
     ul#menu {
         text-align: center;
-        width: 100%;
+        width: 80%;
         display: none;
     }
 
     ul#menu li {
         display: block;
         margin: 0;
+        margin-top: 0.5em;
+        font-size: 130%;
     }
 
     #toggle:checked + ul#menu {
         display: block;
+        font-size: 100%;
     }
+
 }
