@@ -1,9 +1,9 @@
 window.onload = function () {
 
     function navSlide() {
-        const burger = document.querySelector(".burger");
-        const nav = document.querySelector('.menu');
-        const navLinks = document.querySelectorAll('.menu li');
+        var burger = document.querySelector(".burger");
+        var nav = document.querySelector('.menu');
+        var navLinks = document.querySelectorAll('.menu li');
 
         burger.addEventListener('click', () => {
             nav.classList.toggle('nav-active');
