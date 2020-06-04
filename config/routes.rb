@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get "/documentary", to: "documentary#index"
   get "/fashion", to: "fashion#index"
 
-  get "/photography", to: "photography#index"
+  get "/print", to: "print#index"
 
   get "/about", to: "about#index"
   get "/contact", to: "contact#index"

@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
+    <title>Ari Salazar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ari Salazar</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('landing-page/enter.png') %>
   </head>
   <body>
+    <header>
+      <a id='title' href="film"><%= image_tag("landing-page/logo.png", width: '150px') %></a>
 
-    <a id='title' href="film"><%= image_tag("landing-page/logo.png", width: '150px') %></a>
+      <div class="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
 
-    <ul id='menu'>
-      <li><a href="film">film</a></li>
-      <li><a href="documentary">documentary</a></li>
-      <li><a href="fashion">fashion</a></li>
-      <li><a href="photography">photography</a></li>
-      <li><a href="about">about</a></li>
-      <li><a href="contact">contact</a></li>
-    </ul>
+        <ul id='menu'>
+          <li><a href="film">film</a></li>
+          <li><a href="documentary">documentary</a></li>
+          <li><a href="fashion">fashion</a></li>
+          <li><a href="print">print</a></li>
+          <li><a href="about">about</a></li>
+          <li><a href="contact">contact</a></li>
+        </ul>
+      </div>
 
+    </header>
     <%= yield %>
   </body>
 </html>

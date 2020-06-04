@@ -37,11 +37,24 @@ a:hover {
     padding: 0;
     width: 20%;
     margin-top: 0.5em;
-    /* padding-left: 0.1em; */
     font-size: 190%;
     font-family: 'DM Sans', sans-serif;
     color: #34292b;
     float: left;
+}
+
+.nav {
+    text-align: right;
+}
+
+label {
+    margin: 0 40px 0 0 ;
+    font-size: 250%;
+    display: none;
+}
+
+#toggle {
+    display: none;
 }
 
 ul#menu {
@@ -61,8 +74,29 @@ ul#menu li {
     margin-right: 0.8em;
 }
 
-/* @media only screen and (max-width: 600px) {
-    ul#menu li {
-        background-color: white;
+@media only screen and (max-width: 750px) { 
+    label {
+        color: #34292b;
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+        margin-top: 0.8em;
+        margin-right: 1.3em;
     }
-} */
+    
+    ul#menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    ul#menu li {
+        display: block;
+        margin: 0;
+    }
+
+    #toggle:checked + ul#menu {
+        display: block;
+    }
+}
