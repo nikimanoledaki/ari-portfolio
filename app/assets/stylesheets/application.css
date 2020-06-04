@@ -100,9 +100,8 @@ nav {
     
     .menu {
         position: relative;
-        height: 92vh;
-        top: 20vh;
-        width: 100%;
+        height: 90vh;
+        width: 85%;
         text-align: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
