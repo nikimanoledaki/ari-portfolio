@@ -99,7 +99,7 @@ nav {
     }
     
     .menu {
-        position: absolute;
+        position: relative;
         height: 92vh;
         top: 20vh;
         width: 100%;

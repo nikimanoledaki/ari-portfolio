@@ -1,4 +1,8 @@
 document.addEventListener("turbolinks:load", function () {
+    function noScroll() {
+        element.scrollLeft = 0
+    }
+
     function navSlide() {
         var burger = document.querySelector(".burger");
         var nav = document.querySelector(".menu");
@@ -21,4 +25,5 @@ document.addEventListener("turbolinks:load", function () {
     }
 
     navSlide();
+    noScroll();
 });
