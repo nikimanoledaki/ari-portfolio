@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   
   get "/film", to: "film#index"
   get "/documentary", to: "documentary#index"
+  get "/documentary/angela", to: "documentary#angela"
+
   get "/fashion", to: "fashion#index"
 
   get "/print", to: "print#index"
