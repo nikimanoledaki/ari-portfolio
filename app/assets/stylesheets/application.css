@@ -90,6 +90,11 @@ nav {
         overflow-x: hidden;
     }
 
+    header {
+        position: fixed;
+        padding-bottom: 0.4em;
+    }
+
     #title {
         margin-left: 1.3em;
     }
@@ -112,7 +117,7 @@ nav {
         height: 90vh;
         width: 85%;
         text-align: center;
-        transform: translateX(100%);
+        transform: translateX(120%);
         transition: transform 0.5s ease-in;
     }
 
