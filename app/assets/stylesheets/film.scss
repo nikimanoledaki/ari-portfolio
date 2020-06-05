@@ -1,3 +1,44 @@
 // Place all the styles related to the film controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.project {
+    margin-left: 14em;
+    font-size: 90%;
+    letter-spacing: 0.8px;
+}
+
+.project-img-container {
+    overflow: hidden;
+    vertical-align: top;
+    width: 70%;
+    display: inline-flex;
+    margin-bottom: 1em;
+}
+
+.project-img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.thick {
+    font-weight: 1000;
+    margin-bottom: 3px;
+}
+
+.credits {
+    margin-top: 3em;
+    width: 100%;
+    font-size: 88%;
+}
+
+.keys {
+    font-weight: bold;
+}
+
+.keys, 
+.values {
+    list-style-type: none;
+    float: left;
+    margin-right: 3em;
+}
