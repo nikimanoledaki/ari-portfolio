@@ -1,6 +1,7 @@
 
  body {
     background-color: #bd5138;
+    color: white;
     font-family: 'Playfair Display', serif;
     color: #ffffff;
     padding: 0;
@@ -34,14 +35,14 @@ a:hover {
 }
 
 #title {
-    letter-spacing: 0.1em;
     margin: 0;
     padding: 0;
     width: 20%;
     margin-top: 0.5em;
     font-size: 190%;
-    font-family: 'DM Sans', sans-serif;
-    color: #34292b;
+    // font-family: 'DM Sans', sans-serif;
+    // color: #34292b;
+    // letter-spacing: 0.1em;
     float: left;
 }
 
