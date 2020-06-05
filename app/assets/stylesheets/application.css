@@ -31,6 +31,10 @@ header {
     height: 17vh;
 }
 
+footer {
+    padding: 10vh;
+}
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -119,6 +123,7 @@ nav {
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
+        background-color: #bd5138;
     }
 
     .menu li {
