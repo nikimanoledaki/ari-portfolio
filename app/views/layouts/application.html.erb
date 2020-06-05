@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('landing-page/enter.png') %>
+    <%= yield :view_specific_css %>
   </head>
   <body>
     <header>
@@ -21,12 +22,12 @@
         </div>
 
         <ul class="menu">
-          <li><a href="documentary">documentary</a></li>
-          <li><a href="film">film</a></li>
-          <li><a href="fashion">fashion</a></li>
-          <li><a href="print">print</a></li>
-          <li><a href="about">about</a></li>
-          <li><a href="contact">contact</a></li>
+          <li><%= link_to 'documentary', documentary_path, :class => current_class?(documentary_path)  %></li>
+          <li><%= link_to 'film', film_path, :class => current_class?(film_path)  %></li>
+          <li><%= link_to 'fashion', fashion_path, :class => current_class?(fashion_path)  %></li>
+          <li><%= link_to 'print', print_path, :class => current_class?(print_path)  %></li>
+          <li><%= link_to 'about', about_path, :class => current_class?(about_path)  %></li>
+          <li><%= link_to 'contact', contact_path, :class => current_class?(contact_path)  %></li>
         </ul>
       </nav>
 

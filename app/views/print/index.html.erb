@@ -1,3 +1,7 @@
+<% content_for :view_specific_css do %>
+    <%= stylesheet_link_tag 'print' %>
+<% end %>
+
 <div class="content">
     <div class="prints">
         <div class="img-container"><li><img><%= image_tag("prints/Print4.png", width: '300px') %></img></li></div>
