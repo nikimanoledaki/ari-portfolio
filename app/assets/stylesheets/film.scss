@@ -4,7 +4,7 @@
 
 .project {
     margin-left: 14em;
-    font-size: 90%;
+    font-size: 80%;
     letter-spacing: 0.8px;
 }
 
@@ -32,13 +32,17 @@
     font-size: 88%;
 }
 
-.keys {
-    font-weight: bold;
-}
-
 .keys, 
 .values {
     list-style-type: none;
     float: left;
-    margin-right: 3em;
+}
+
+.keys {
+    font-weight: bold;
+    margin-right: 2em;
+}
+
+.values {
+    margin-right: 5em;
 }
