@@ -1,3 +1,42 @@
 // Place all the styles related to the print controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-top: 17vh;
+    margin-left: 4em;
+    margin-right: 1em;
+}
+
+.prints li {
+    vertical-align: top;
+    width: 30%;
+    list-style-type: none;
+    display: inline-block;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+img :not(#title) {
+    width: 100%;
+    height: auto;
+}
+
+// @media only screen and (min-width: 750px) { 
+//     .zoom {
+//         transition: transform .2s; /* Animation */
+//     }
+    
+//     .zoom:hover {
+//         transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+//     }
+// }
+
+footer {
+    padding: 10vh;
+}
