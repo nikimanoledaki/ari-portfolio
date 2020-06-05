@@ -1,11 +1,10 @@
-
- body {
-    background-color: #bd5138;
-    color: white;
-    font-family: 'Playfair Display', serif;
-    color: #ffffff;
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #ffffff;
 }
 
 .active  {
@@ -30,31 +29,15 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #70d958;
-}
-
 #title {
-    margin: 0;
-    padding: 0;
     width: 20%;
     margin-top: 0.5em;
     font-size: 190%;
-    // font-family: 'DM Sans', sans-serif;
-    // color: #34292b;
-    // letter-spacing: 0.1em;
     float: left;
 }
 
 nav {
     text-align: right;
-}
-
-.content {
-    max-width: 90%;
-    margin: auto;
-    margin-top: 7em;
-    padding-left: 7em;
 }
 
 .burger div {
@@ -69,21 +52,17 @@ nav {
 }
 
 .menu {
-    margin:0;
-    padding:0;
     margin-right: 2em;
     list-style-type: none;
     float: right;
 }
 
 .menu li {
-    padding: 0;
-    margin: 0;
     font-size: 90%;
     display: inline-block;
+    padding: 14px;
     margin-top: 2.5em;
-    margin-right: 0.8em;
-    color: white;
+    margin-right: 1em;
 }
  
 @media only screen and (max-width: 750px) { 
@@ -94,7 +73,7 @@ nav {
 
     header {
         position: fixed;
-        padding-bottom: 0em;
+        padding-bottom: 0.1em;
     }
 
     #title {
@@ -117,17 +96,17 @@ nav {
     .menu {
         position: relative;
         height: 90vh;
-        width: 85%;
+        width: 100%;
         text-align: center;
         transform: translateX(120%);
-        transition: transform 0.5s ease-in;
+        transition: transform 0.1s ease-in;
         background-color: #bd5138;
+        opacity: 0.90;
     }
 
     .menu li {
         opacity: 0;
         display: block;
-        margin: 0;
         margin-top: 0.5em;
         font-size: 130%;
     }
@@ -159,4 +138,11 @@ nav {
         transform: rotate(45deg) translate(-9px,-6px);
     }
 
+}
+
+.content {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 7em;
+    padding-left: 7em;
 }
