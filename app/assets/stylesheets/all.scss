@@ -4,7 +4,7 @@
 }
 
 body {
-    color: #ffffff;
+    color: black;
 }
 
 .active  {
@@ -16,7 +16,7 @@ header {
     width: 100%;
     top: 0;
     text-align: center;
-    background-color: #bd5138;
+    background-color: white;
     height: 16vh;
 }
 
@@ -25,7 +25,7 @@ footer {
 }
 
 a {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
 }
 
@@ -103,7 +103,7 @@ nav {
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.1s ease-in;
-        background-color: #bd5138;
+        background-color: white;
         opacity: 0.90;
     }
 
