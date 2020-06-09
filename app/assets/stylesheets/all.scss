@@ -17,7 +17,7 @@ header {
     top: 0;
     text-align: center;
     background-color: white;
-    height: 16vh;
+    height: 15vh;
 }
 
 footer {
@@ -30,9 +30,8 @@ a {
 }
 
 #title {
-    width: 20%;
-    margin-top: 0.5em;
-    font-size: 190%;
+    width: 13%;
+    margin-top: 1em;
     float: left;
 }
 
@@ -52,13 +51,13 @@ nav {
 }
 
 .menu {
-    margin-right: 2em;
+    margin-right: 0.8em;
     list-style-type: none;
     float: right;
 }
 
 .menu li {
-    font-size: 90%;
+    font-size: 80%;
     display: inline-block;
     padding: 14px;
     margin-top: 2.5em;
