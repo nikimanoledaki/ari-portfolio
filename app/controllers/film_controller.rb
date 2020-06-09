@@ -7,4 +7,16 @@ class FilmController < ApplicationController
 
     def limbo
     end
+
+    def angela
+    end
+
+    def vemPlus
+    end
+
+    def zeina
+    end
+
+    def whereDoIEvenStart
+    end
 end
