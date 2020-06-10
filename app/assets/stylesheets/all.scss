@@ -12,15 +12,15 @@ body {
 
 header {
     position: fixed;
+    overflow: hidden;
     width: 100%;
     top: 0;
     text-align: center;
     background-color: white;
-    height: 15vh;
+    height: 16vh;
 }
 
 .content {
-    position: relative;
     max-width: 70%;
     margin: 0 auto;
     margin-top: 16vh;
@@ -81,14 +81,11 @@ nav {
 
     header {
         position: fixed;
+        height: 13.5vh;
     }
 
     #title {
         margin-left: 1.3em;
-    }
-
-    header {
-        height: 13.5vh;
     }
 
     .burger {
@@ -106,6 +103,7 @@ nav {
     
     .menu {
         position: relative;
+        margin-top: 13vh;
         height: 87vh;
         width: 100%;
         text-align: center;
@@ -116,15 +114,15 @@ nav {
     }
 
     .menu li {
+        display: block;
         width: 100%;
         opacity: 0;
-        display: block;
-        margin-top: 0.5em;
-        margin-left: 1em;
+        margin: 1.2em auto;
         font-size: 130%;
     }
 
     .nav-active {
+        position: fixed;
         transform: translateX(0%);
     }
 

@@ -19,13 +19,11 @@
 }
 
 .print-container {
-    max-height: 600px;
-    max-width: 300px;
+    display: block;
+    margin: 1em auto;
+    max-height: 700px;
+    max-width: 500px;
     overflow: hidden;
-    vertical-align: top;
-    width: 30%;
-    display: inline-flex;
-    margin: 0.5em;
 }
 
 .prints img {
@@ -33,25 +31,16 @@
     height: auto;
 }
 
-@media only screen and (max-width: 750px) { 
-    .content {
-        width: 100%;
-        margin: 0;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 6.2em;
-    }
+// @media only screen and (max-width: 750px) { 
+//     .print-container {
+//         display: block;
+//         margin: 1em auto;
+//         max-height: 700px;
+//         max-width: 500px;
+//         overflow: hidden;
+//     }
 
-    .print-container {
-        max-height: 600px;
-        max-width: 300px;
-        overflow: hidden;
-        width: 100%;
-        margin-left: 2.2em;
-        margin-right: 1.9em;
-    }
-
-    .prints img {
-        width: 100%;
-    }
-}
+//     .prints img {
+//         width: 100%;
+//     }
+// }
