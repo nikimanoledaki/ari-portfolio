@@ -2,25 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// @media only screen and (max-width: 768px) { 
-//     .content {
-//         padding-right: -2em;
-//     }
-// }
-
-.prints ul {
-    padding-inline-start: 0;
-    padding: 0;
-    padding-right: -2em;
+.prints {
+    width: 100%;
 }
 
-.prints li {
-    list-style-type: none;
+@media only screen and (min-width: 750px) { 
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+    }
 }
 
 .print-container {
-    display: block;
-    margin: 1em auto;
+    margin: 1 auto;
     max-height: 700px;
     max-width: 500px;
     overflow: hidden;
@@ -29,4 +26,10 @@
 .prints img {
     width: 100%;
     height: auto;
+    margin: 0.5em;
+}
+
+.print-text {
+    text-align: center;
+    margin: auto;
 }
