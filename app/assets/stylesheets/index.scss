@@ -3,11 +3,11 @@
 }
 
 .index-container {
+    display: block;
+    margin: 1em auto;
+    max-height: 500px;
+    max-width: 500px;
     overflow: hidden;
-    vertical-align: top;
-    width: 100%;
-    display: inline-flex;
-    margin-bottom: 1em;
 }
 
 .index-container img {
