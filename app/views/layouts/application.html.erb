@@ -7,11 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= favicon_link_tag asset_path('landing-page/enter.png') %>
+    <%= favicon_link_tag asset_path('logos/enter.png') %>
   </head>
   <body>
     <header>
-      <a id='title' href="film"><%= image_tag("landing-page/logo.png", width: '130px') %></a>
+      <a id='title' href="film"><%= image_tag("logos/name-logo.png", width: '130px') %></a>
 
       <nav>
         <div class="burger">
@@ -30,7 +30,8 @@
       </nav>
 
     </header>
+    
     <%= yield %>
-    <footer></footer>
+
   </body>
-</html>
+  </html>
