@@ -6,12 +6,12 @@
     width: 100%;
 }
 
-// @media only screen and (min-width: 750px) { 
-//     .row {
-//         display: flex;
-//         display: -webkit-flex;
-//     }
-// }
+@media only screen and (min-width: 750px) { 
+    .row {
+        display: flex;
+        display: -webkit-flex;
+    }
+}
 
 .print-container {
     margin: 1 auto;

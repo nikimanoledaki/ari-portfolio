@@ -107,6 +107,7 @@ nav {
         transition: transform 0.1s ease-in;
         background-color: white;
         opacity: 0.90;
+        overflow-y: hidden;
     }
 
     .menu li {
