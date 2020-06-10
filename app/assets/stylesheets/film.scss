@@ -3,17 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .project {
-    margin-left: 14em;
     font-size: 88%;
     letter-spacing: 1px;
     line-height: 13pt;
 }
 
 .project-container {
+    display: inline-flex;
     overflow: hidden;
     vertical-align: top;
-    width: 70%;
-    display: inline-flex;
+    width: 100%;
     margin-bottom: 1em;
 }
 

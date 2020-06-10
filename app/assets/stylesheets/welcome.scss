@@ -4,16 +4,14 @@
 
 body {
     background-color: white;
+    color: black;
     font-family: 'Playfair Display', serif;
     font-size: 90%;
     letter-spacing: 0.8px;
 }
 
-.enter {
-    text-decoration: none;
+a {
     color: black;
-    display: block;
-    text-align: center;
     text-decoration: none;
 }
 
@@ -24,8 +22,13 @@ a:hover {
 ul#landing-page {
     margin-top: 10%;
     list-style-type: none;
+    padding-inline-start: 0;
 }
 
 ul#landing-page li {
     text-align: center;
+}
+
+ul#landing-page img {
+    padding-left: 4em;
 }

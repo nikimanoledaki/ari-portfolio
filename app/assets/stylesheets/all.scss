@@ -1,14 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
 
 body {
     color: black;
-}
-
-.active  {
-    color: #70d958
 }
 
 header {
@@ -20,19 +19,28 @@ header {
     height: 15vh;
 }
 
-footer {
-    padding: 10vh;
+.content {
+    position: relative;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 16vh;
+    font-size: 88%;
+    letter-spacing: 1px;
+    line-height: 13pt;
 }
 
-a {
-    color: black;
-    text-decoration: none;
+footer {
+    padding: 10vh;
 }
 
 #title {
     width: 13%;
     margin-top: 1em;
     float: left;
+}
+
+.active  {
+    color: #70d958
 }
 
 nav {
@@ -45,7 +53,7 @@ nav {
     height: 4px; 
     border-radius: 25px;
     margin: 5px;
-    background: #34292b;
+    background: black;
     display: none;
     transition: all 0.3s ease;
 }
@@ -143,11 +151,4 @@ nav {
         transform: rotate(45deg) translate(-9px,-6px);
     }
 
-}
-
-.content {
-    max-width: 90%;
-    margin: auto;
-    margin-top: 16vh;
-    padding-left: 7em;
 }

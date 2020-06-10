@@ -2,15 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
-    margin: 0;
+// @media only screen and (max-width: 768px) { 
+//     .content {
+//         padding-left: 2em;
+//     }
+// }
+
+.prints ul {
+    padding-inline-start: 0;
     padding: 0;
 }
 
-@media only screen and (max-width: 768px) { 
-    .content {
-        padding-left: 2em;
-    }
+.prints li {
+    list-style-type: none;
 }
 
 .print-container {
@@ -21,10 +25,6 @@
     width: 30%;
     display: inline-flex;
     margin: 0.5em;
-}
-
-.prints li {
-    list-style-type: none;
 }
 
 .prints img {
