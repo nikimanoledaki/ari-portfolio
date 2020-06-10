@@ -30,6 +30,10 @@
     margin-bottom: 3px;
 }
 
+.column {
+    display: inline;
+}
+
 .credits {
     margin-top: 3em;
     width: 100%;
@@ -49,4 +53,17 @@
 
 .values {
     margin-right: 5em;
+}
+
+@media only screen and (max-width: 750px) { 
+    .text {
+        max-width: 90%;
+        position: relative;
+        margin: auto;
+    }
+
+    .keys, 
+    .values {
+        width: 30%;
+    } 
 }
