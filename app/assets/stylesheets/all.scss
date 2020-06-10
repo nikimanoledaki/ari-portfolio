@@ -107,7 +107,7 @@ nav {
         transition: transform 0.1s ease-in;
         background-color: white;
         opacity: 0.90;
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .menu li {
@@ -119,7 +119,8 @@ nav {
     }
 
     .nav-active {
-        position: fixed;
+        // position: fixed;
+        position: absolute;
         -webkit-transform: translateX(0%);
         transform: translateX(0%);
     }
