@@ -20,15 +20,18 @@ a:hover {
 }
 
 ul#landing-page {
-    margin-top: 10%;
+    width: 100%;
+    margin: auto;
+    margin-top: 10rem;
     list-style-type: none;
     padding-inline-start: 0;
 }
 
 ul#landing-page li {
     text-align: center;
+    margin-right: 1em;
 }
 
-// ul#landing-page img {
-//     padding-left: 4em;
-// }
+.enter {
+    margin-right: 3em;
+}
