@@ -52,6 +52,7 @@ nav {
     margin: 5px;
     background: black;
     display: none;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -106,6 +107,7 @@ nav {
         text-align: center;
         -webkit-transform: translateX(120%);
         transform: translateX(120%);
+        -webkit-transition: transform 0.1s ease-in;
         transition: transform 0.1s ease-in;
         background-color: white;
         opacity: 0.90;
