@@ -33,5 +33,32 @@ ul#landing-page li {
 }
 
 .enter {
-    margin-right: 3em;
+    margin-right: 2.8em;
+}
+
+.landing-container {
+    margin: auto;
+    width: 50%;
+    max-height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.landing-container img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 750px) { 
+    ul#landing-page {
+        margin-top: 12rem;
+    }
+
+    ul#landing-page li {
+        margin-right: 0;
+    }
+
+    .enter {
+        margin-right: 1.4em;
+    }
 }
