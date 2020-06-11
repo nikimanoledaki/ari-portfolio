@@ -26,7 +26,7 @@ header {
     max-width: 70%;
     margin: 0 auto;
     font-size: 88%;
-    letter-spacing: 1px;
+    letter-spacing: 0.063em;
     line-height: 13pt;
     padding-bottom: 5rem;
 }
@@ -88,7 +88,7 @@ nav {
 .menu li {
     font-size: 80%;
     display: inline-block;
-    padding: 14px;
+    padding: 1.2em;
     margin-top: 2.5em;
     margin-right: 1em;
 }
@@ -194,5 +194,69 @@ nav {
 
     .content div {
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1366px) { 
+    #title {
+        margin-top: 2.5em;
+        width: 14%;
+    }
+
+    .title-logo {
+        width: 8em;
+    }
+
+    .menu {
+        margin-right: 2em;
+        margin-top: 1.5em;
+    }
+
+    .menu li {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 1920px) { 
+    #title {
+        margin-top: 3em;
+        width: 23%;
+    }
+
+    .title-logo {
+        width: 10em;
+    }
+
+    .menu {
+        margin-right: 6em;
+        margin-top: 2em;
+    }
+
+    .content {
+        max-width: 55%;
+    }
+}
+
+@media only screen and (min-width: 3840px) { 
+    #title {
+        margin-top: 5em;
+        width: 30%;
+    }
+
+    .title-logo {
+        width: 13em;
+    }
+
+    .menu {
+        margin-right: 10em;
+        margin-top: 3em;
+    }
+
+    .menu li {
+        font-size: 130%;
+    }
+
+    .content {
+        max-width: 50%;
     }
 }

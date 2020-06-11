@@ -39,8 +39,8 @@ ul#landing-page li {
 .landing-container {
     margin: auto;
     width: 50%;
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 20em;
+    max-width: 20em;
     overflow: hidden;
 }
 
@@ -60,5 +60,51 @@ ul#landing-page li {
 
     .enter {
         margin-right: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 1366px) { 
+    body {
+        font-size: 120%;
+    }
+
+    .landing-container img {
+        max-height: 50em;
+        width: 17em;
+    }
+
+    .enter {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1920px) { 
+    body {
+        font-size: 140%;
+    }
+
+    .landing-container {
+        padding-top: 7em;
+        max-height: 100em;
+        width: 100em;
+    }
+
+    .landing-container img {
+        max-height: 100em;
+        width: 20em;
+    }
+
+    .enter {
+        margin-right: 2em;
+    }
+}
+
+@media only screen and (min-width: 3840px) { 
+    body {
+        font-size: 200%;
+    }
+
+    .landing-container {
+        padding-top: 20em;
     }
 }
