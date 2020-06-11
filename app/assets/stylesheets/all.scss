@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: asbolute;
     width: 100%;
     top: 0;
     text-align: center;
@@ -19,7 +19,6 @@ header {
 .content {
     max-width: 70%;
     margin: 0 auto;
-    margin-top: 16vh;
     font-size: 88%;
     letter-spacing: 1px;
     line-height: 13pt;
@@ -74,8 +73,8 @@ nav {
     }
 
     header {
-        position: fixed;
-        height: 13.5vh;
+        position: absolute;
+        height: 13vh;
     }
 
     #title {
@@ -119,8 +118,8 @@ nav {
     }
 
     .nav-active {
-        // position: fixed;
         position: absolute;
+        z-index: 1;
         -webkit-transform: translateX(0%);
         transform: translateX(0%);
     }
@@ -160,6 +159,17 @@ nav {
     }
 
     .content {
+        position: absolute;
+        top: 14vh;
         max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .content div {
+        margin: 0 auto;
     }
 }

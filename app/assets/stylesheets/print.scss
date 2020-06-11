@@ -11,18 +11,34 @@
         display: flex;
         display: -webkit-flex;
     }
+
+    .print-container .img {
+        align-items: left;
+    }
+}
+
+@media only screen and (max-width: 750px) { 
+    .print-text {
+        text-align: center;
+    }
+}
+
+.row {
+    margin-bottom: 1em;
 }
 
 .print-container {
     margin: 1 auto;
+    overflow: hidden;
     max-height: 700px;
-    max-width: 500px;
+    max-width: 300px;
 }
 
-.prints img {
+.print-container .img {
     width: 100%;
     height: auto;
-    margin: 0.5em;
+    margin-top: 0;
+    align-items: center;
 }
 
 .print-text {
