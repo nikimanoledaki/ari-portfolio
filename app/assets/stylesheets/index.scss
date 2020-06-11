@@ -4,14 +4,36 @@
 
 .index-container {
     display: block;
+    position: relative;
     margin: 1em auto;
-    max-height: 400px;
+    max-height: 300px;
     max-width: 800px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .index-container .img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
+.fade::after {
+    content:attr(data-text);
+    color: black;
+    font-weight: bold;
+    font-size: 14pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fade:hover::after {
+    opacity: 1;
+}
