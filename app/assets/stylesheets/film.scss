@@ -6,6 +6,7 @@
     font-size: 88%;
     letter-spacing: 1px;
     line-height: 13pt;
+    text-align: left;
 }
 
 .project-container {
@@ -30,13 +31,8 @@
     margin-bottom: 3px;
 }
 
-.column {
-    display: inline;
-}
-
 .credits {
     margin-top: 3em;
-    width: 100%;
     font-size: 90%;
 }
 
@@ -62,8 +58,13 @@
         margin: auto;
     }
 
-    .keys, 
+    .keys {
+        width: 51%;
+        line-height: 15pt;
+    }
+
     .values {
-        width: 30%;
+        width: 49%;
+        line-height: 15pt;
     } 
 }
