@@ -1,3 +1,35 @@
 // Place all the styles related to the about controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about p {
+    padding-top: 2em;
+}
+
+.about-container {
+    position: absolute;
+    overflow: hidden;
+}
+
+.about1 {
+    top: 20%;
+    left: 0;
+    width: 13%;
+}
+
+.about2 {
+    top: 60%;
+    left: -28%;
+    width: 30%; 
+}
+
+.about3 {
+    top: 65%;
+    right: 20%;
+    width: 8%;  
+}
+
+.about-container .img {
+    width: 100%;
+    height: auto;
+}
