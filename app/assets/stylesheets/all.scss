@@ -81,6 +81,7 @@ nav {
 
     #title {
         margin-left: 1.3em;
+        z-index: 100;
     }
 
     .burger {
@@ -98,17 +99,14 @@ nav {
     
     .menu {
         position: relative;
-        margin-top: 13vh;
-        height: 87vh;
+        margin-top: 15vh;
+        height: 85vh;
         width: 100%;
         text-align: center;
-        -webkit-transform: translateX(120%);
-        transform: translateX(120%);
         -webkit-transition: transform 0.1s ease-in;
         transition: transform 0.1s ease-in;
         background-color: white;
         opacity: 0.90;
-        overflow-x: hidden;
     }
 
     .menu li {
@@ -121,9 +119,7 @@ nav {
 
     .nav-active {
         position: absolute;
-        z-index: 1;
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
+        z-index: 3;
     }
 
     @-webkit-keyframes menuLinkFade {
