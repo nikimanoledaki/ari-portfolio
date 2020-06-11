@@ -10,27 +10,35 @@
     <%= favicon_link_tag asset_path('logos/enter.png') %>
   </head>
   <body>
-    <header>
-      <a id='title' href="film"><%= image_tag("logos/name-logo.png", width: '130px') %></a>
+    <div class="page">
+      <header>
+        <a id='title' href="film"><%= image_tag("logos/name-logo.png", width: '130px') %></a>
 
-      <nav>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+        <nav>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
+          <ul class="menu">
+            <li><%= link_to 'film', film_path, :class => current_class?(film_path)  %></li>
+            <li><%= link_to 'commercial', commercial_path, :class => current_class?(commercial_path)  %></li>
+            <li><%= link_to 'print', print_path, :class => current_class?(print_path)  %></li>
+            <li><%= link_to 'about', about_path, :class => current_class?(about_path)  %></li>
+            <li><%= link_to 'contact', contact_path, :class => current_class?(contact_path)  %></li>
+          </ul>
+        </nav>
+      </header>
+        <%= yield %>
+      
+      <footer class="footer">
+        <div class="social-media">
+          <a href="https://www.instagram.com/arisalzr/"><%= image_tag("logos/insta.png", width: '20px') %></a>
+          <a href="https://www.facebook.com/ari.salazar"><%= image_tag("logos/facebook.png", width: '20px') %></a>
+          <a href="https://vimeo.com/user33990006"><%= image_tag("logos/vimeo.png", width: '20px') %></a>
         </div>
-
-        <ul class="menu">
-          <li><%= link_to 'film', film_path, :class => current_class?(film_path)  %></li>
-          <li><%= link_to 'commercial', commercial_path, :class => current_class?(commercial_path)  %></li>
-          <li><%= link_to 'print', print_path, :class => current_class?(print_path)  %></li>
-          <li><%= link_to 'about', about_path, :class => current_class?(about_path)  %></li>
-          <li><%= link_to 'contact', contact_path, :class => current_class?(contact_path)  %></li>
-        </ul>
-      </nav>
-    </header>
-      <%= yield %>
-    
-    <footer class="footer"></footer>
+      </footer>
+    </div>
   </body>
   </html>
