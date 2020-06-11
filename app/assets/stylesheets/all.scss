@@ -23,7 +23,7 @@ header {
 }
 
 .content {
-    max-width: 70%;
+    max-width: 60%;
     margin: 0 auto;
     font-size: 88%;
     letter-spacing: 0.063em;
@@ -194,46 +194,6 @@ nav {
 
     .content div {
         margin: 0 auto;
-    }
-}
-
-@media only screen and (min-width: 1366px) { 
-    #title {
-        margin-top: 2.5em;
-        width: 14%;
-    }
-
-    .title-logo {
-        width: 8em;
-    }
-
-    .menu {
-        margin-right: 2em;
-        margin-top: 1.5em;
-    }
-
-    .menu li {
-        font-size: 90%;
-    }
-}
-
-@media only screen and (min-width: 1920px) { 
-    #title {
-        margin-top: 3em;
-        width: 23%;
-    }
-
-    .title-logo {
-        width: 10em;
-    }
-
-    .menu {
-        margin-right: 6em;
-        margin-top: 2em;
-    }
-
-    .content {
-        max-width: 55%;
     }
 }
 

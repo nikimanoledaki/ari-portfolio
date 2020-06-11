@@ -63,28 +63,13 @@ ul#landing-page li {
     }
 }
 
-@media only screen and (min-width: 1366px) { 
-    body {
-        font-size: 120%;
-    }
-
-    .landing-container img {
-        max-height: 50em;
-        width: 17em;
-    }
-
-    .enter {
-        margin-right: 0;
-    }
-}
-
-@media only screen and (min-width: 1920px) { 
+@media only screen and (min-width: 3840px) { 
     body {
         font-size: 140%;
     }
 
     .landing-container {
-        padding-top: 7em;
+        padding-top: 10em;
         max-height: 100em;
         width: 100em;
     }
@@ -96,15 +81,5 @@ ul#landing-page li {
 
     .enter {
         margin-right: 2em;
-    }
-}
-
-@media only screen and (min-width: 3840px) { 
-    body {
-        font-size: 200%;
-    }
-
-    .landing-container {
-        padding-top: 20em;
     }
 }
