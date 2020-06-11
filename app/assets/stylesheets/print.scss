@@ -4,6 +4,7 @@
 
 .prints {
     width: 100%;
+    margin-left: 10%;
 }
 
 @media only screen and (min-width: 750px) { 
@@ -20,6 +21,12 @@
 @media only screen and (max-width: 750px) { 
     .print-text {
         text-align: center;
+    }
+
+    .print-text {
+        text-align: center;
+        padding: 1em;
+        padding-bottom: 3em;
     }
 }
 

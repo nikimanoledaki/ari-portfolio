@@ -13,7 +13,7 @@ header {
     top: 0;
     text-align: center;
     background-color: white;
-    height: 16vh;
+    height: 18vh;
 }
 
 .content {
@@ -27,6 +27,7 @@ header {
 #title {
     width: 13%;
     margin-top: 1em;
+    margin-left: 1em;
     float: left;
 }
 
@@ -160,7 +161,7 @@ nav {
 
     .content {
         position: absolute;
-        top: 14vh;
+        top: 16vh;
         max-width: 95%;
         margin-left: auto;
         margin-right: auto;
