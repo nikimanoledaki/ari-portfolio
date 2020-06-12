@@ -8,7 +8,7 @@
 }
 
 @media only screen and (min-width: 750px) { 
-    .row {
+    .prints .row {
         display: flex;
         display: -webkit-flex;
     }
@@ -34,7 +34,7 @@
     }
 }
 
-.row {
+.prints .row {
     margin-bottom: 1em;
 }
 
