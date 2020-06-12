@@ -18,9 +18,10 @@
 }
 
 .text {
-    width: 100%;
+    width: 90%;
     text-align: left;
     margin: auto;
+    padding-top: 1.5em;
     font-size: 88%;
     letter-spacing: 0.075em;
     line-height: 13pt;
@@ -38,8 +39,6 @@
 .credits {
     display: flex;
     display: -webkit-flex;
-    font-size: 90%;
-    // justify-content: space-between;
 }
 
 .project .row {
@@ -57,12 +56,16 @@
 
 .keys {
     font-weight: bold;
-    margin-right: 2em;
+    min-width: 40%;
 }
 
 @media only screen and (min-width: 750px) { 
     .values {
         margin-right: 5em;
+    }
+
+    .project-container {
+        padding-top: 3em;
     }
 }
 
