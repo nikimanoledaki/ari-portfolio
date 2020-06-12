@@ -2,24 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.project {
-    font-size: 88%;
-    letter-spacing: 0.075em;
-    line-height: 13pt;
-    text-align: left;
-}
-
 .project-container {
-    display: inline-flex;
+    display: block;
+    position: relative;
+    margin: 1 auto;
     overflow: hidden;
-    vertical-align: top;
-    width: 100%;
-    margin-bottom: 1em;
+    max-height: 30em;
+    max-width: 65em;
 }
 
 .project-container .img {
     width: 100%;
     height: auto;
+    align-items: center;
+}
+
+.text {
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    padding-top: 1.5em;
+    font-size: 88%;
+    letter-spacing: 0.075em;
+    line-height: 13pt;
 }
 
 .synopsis {
@@ -32,42 +37,40 @@
 }
 
 .credits {
-    margin-top: 3em;
-    font-size: 90%;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.project .row {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 100%;
 }
 
 .keys, 
 .values {
     list-style-type: none;
-    float: left;
+    margin-top: 2em;
 }
 
 .keys {
     font-weight: bold;
-    margin-right: 2em;
+    min-width: 40%;
 }
 
-.values {
-    margin-right: 5em;
+@media only screen and (min-width: 750px) { 
+    .values {
+        margin-right: 5em;
+    }
+
+    .project-container {
+        padding-top: 3em;
+    }
 }
 
 @media only screen and (max-width: 750px) { 
-    .text {
-        max-width: 90%;
-        position: relative;
-        margin: auto;
+    .credits {
+        flex-direction: column;
     }
-
-    .keys {
-        width: 51%;
-        line-height: 15pt;
-    }
-
-    .values {
-        width: 49%;
-        line-height: 15pt;
-    } 
-}
-
-@media only screen and (min-width: 3840px) { 
 }
