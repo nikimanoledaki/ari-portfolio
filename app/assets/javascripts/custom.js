@@ -1,5 +1,10 @@
 document.addEventListener("turbolinks:load", function () {
 
+    // function screenHeight() {
+    //     let vh = window.innerHeight * 0.01;
+    //     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    // }
+
     function navSlide() {
         var burger = document.querySelector(".burger");
         var nav = document.querySelector(".menu");
