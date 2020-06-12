@@ -3,8 +3,15 @@
     padding: 0;
 }
 
+html {
+    height: 100vh;
+    padding: 0;
+}
+
 body {
     color: black;
+    min-height: 100vh;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -109,6 +116,21 @@ nav {
         z-index: 100;
     }
 
+    .content {
+        padding-top: 16vh;
+        max-width: 95%;
+        bottom: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .content div {
+        margin: 0 auto;
+    }
+
     .burger {
         float: right;
         margin-top: 2em;
@@ -124,8 +146,10 @@ nav {
     
     .menu {
         position: relative;
-        margin-top: 15vh;
-        height: 85vh;
+        display: none;
+        margin-top: -0.1em;
+        margin-right: -0.1em;
+        height: 100vh;
         width: 100%;
         text-align: center;
         -webkit-transition: transform 0.1s ease-in;
@@ -138,12 +162,13 @@ nav {
         display: block;
         width: 100%;
         opacity: 0;
-        margin: 1.2em auto;
+        padding: 0;
         font-size: 130%;
     }
 
     .nav-active {
-        position: absolute;
+        position: relative;
+        display: block;
         z-index: 3;
     }
 
@@ -179,21 +204,6 @@ nav {
 
     .toggle .line3 {
         transform: rotate(45deg) translate(-9px,-6px);
-    }
-
-    .content {
-        position: absolute;
-        top: 16vh;
-        max-width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
-    }
-
-    .content div {
-        margin: 0 auto;
     }
 }
 
