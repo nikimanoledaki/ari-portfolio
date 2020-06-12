@@ -1,9 +1,9 @@
 document.addEventListener("turbolinks:load", function () {
 
-    // function screenHeight() {
-    //     let vh = window.innerHeight * 0.01;
-    //     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    // }
+    function setScreenHeight() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
 
     function navSlide() {
         var burger = document.querySelector(".burger");
@@ -26,5 +26,6 @@ document.addEventListener("turbolinks:load", function () {
 
     }
 
+    setScreenHeight()
     navSlide();
 });
