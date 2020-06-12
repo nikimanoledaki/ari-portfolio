@@ -18,11 +18,10 @@
 }
 
 .text {
-    width: 90%;
+    width: 98%;
     text-align: left;
     margin: auto;
     padding-top: 1.5em;
-    font-size: 88%;
     letter-spacing: 0.075em;
     line-height: 13pt;
 }
@@ -34,6 +33,7 @@
 .thick {
     font-weight: bold;
     margin-bottom: 3px;
+    font-size: 100%;
 }
 
 .credits {
@@ -52,6 +52,7 @@
 .values {
     list-style-type: none;
     margin-top: 2em;
+    font-size: 88%;
 }
 
 .keys {
@@ -68,10 +69,6 @@
         padding-top: 3em;
     }
 
-    // .row-one .keys {
-    //     width: 35%;
-    // }
-
     .row-three .keys {
         min-width: 13%;
     }
@@ -80,5 +77,14 @@
 @media only screen and (max-width: 750px) { 
     .credits {
         flex-direction: column;
+    }
+    .text {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-height: 520px) { 
+    .project-container {
+        padding-top: 5vh;
     }
 }
