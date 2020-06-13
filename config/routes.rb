@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get "/", to: "welcome#index", as: "root"
+
+  get "/sitemap", to: "sitemap#index"
   
   get "/film", to: "film#index"
   get "/film/last-night-i-had-this-dream", to: "film#lastNightIHadThisDream"
