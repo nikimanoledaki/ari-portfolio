@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   get "/", to: "welcome#index", as: "root"
-
   get "/sitemap", to: "sitemap#index"
-  
+  get "/about", to: "about#index"
+  get "/contact", to: "contact#index"
+
+  get "/print", to: "print#index"
+  resources :print
+
   get "/film", to: "film#index"
   get "/film/last-night-i-had-this-dream", to: "film#lastNightIHadThisDream"
   get "/film/limbo", to: "film#limbo"
@@ -13,9 +17,4 @@ Rails.application.routes.draw do
 
   get "/commercial", to: "commercial#index"
   get "/commercial/henriette-von-gruenberg", to: "commercial#henrietteVonGruenberg"
-
-  get "/print", to: "print#index"
-
-  get "/about", to: "about#index"
-  get "/contact", to: "contact#index"
 end
